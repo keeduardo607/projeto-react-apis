@@ -8,6 +8,9 @@ const AppProvider = ({ children }) => {
   const [isPokemonInPokedex, setIsPokemonInPokedex] = useState(false);
   const [currentPokemonName, setCurrentPokemonName] = useState(""); 
 
+  //console.log('buttonText', buttonText);
+  //console.log('pokedex', pokedex);
+
   const addToPokedex = (pokemon) => {
     if (!pokedex.some(p => p.name === pokemon.name)) {
       setPokedex((prevPokedex) => [...prevPokedex, pokemon]);

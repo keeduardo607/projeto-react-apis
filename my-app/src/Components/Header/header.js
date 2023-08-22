@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledContainer, StyledImageHeader, LeftButton, RightButton, ButtonVoltar, VerPokemons, ButtonAdicionarRemover } from "./headerStyled";
+import { StyledImageHeader, LeftButton, RightButton, ButtonVoltar, VerPokemons, ButtonAdicionarRemover, StyledContainerHeader } from "./headerStyled";
 import ImageHeader from "../../Images/image 1.png";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAppContext } from "../../AppContext";
@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <StyledContainer>
+    <StyledContainerHeader>
       <LeftButton>
         {location.pathname !== "/" && (
           <ButtonVoltar onClick={() => navigate(-1)}>Voltar</ButtonVoltar>
@@ -45,7 +45,7 @@ const Header = () => {
     </>
   )}
 </RightButton>
-    </StyledContainer>
+    </StyledContainerHeader>
   );
 };
 

@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Button, Box, Image, Stack, Card, CardFooter, ButtonGroup, Heading, Center, Text } from "@chakra-ui/react";
 import { useAppContext } from "../../AppContext";
-import { TituloPokedex } from "./PokemonsListPageStyled";
+import { TituloPokedexPage } from "./PokemonsListPageStyled";
 
 const PokemonsListPage = () => {
   const { pokedex, removeFromPokedex } = useAppContext();
@@ -52,7 +52,7 @@ const PokemonsListPage = () => {
 
   return (
     <Box p="4" bg={'gray'}>
-      <TituloPokedex>Meus Pokémons</TituloPokedex>
+      <TituloPokedexPage>Meus Pokémons</TituloPokedexPage>
       <Stack direction="row" spacing={4} flexWrap="wrap">
         {pokedex.map((pokemon) => {
           const details = pokemonDetails[pokemon.name];

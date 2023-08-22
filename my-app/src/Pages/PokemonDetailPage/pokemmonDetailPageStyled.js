@@ -4,7 +4,7 @@ export const StyledContainer = styled.div`
    color: brown;
 `
 
-export const TituloDetalhes = styled.h3`
+export const TituloDetalhesPage = styled.h3`
   display: flex;
   align-items: center;
   padding-left: 20px;

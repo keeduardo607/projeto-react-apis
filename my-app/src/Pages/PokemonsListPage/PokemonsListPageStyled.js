@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const TituloPokedex = styled.h3`
+export const TituloPokedexPage = styled.h3`
   display: flex;
   align-items: center;
   padding-left: 20px;
