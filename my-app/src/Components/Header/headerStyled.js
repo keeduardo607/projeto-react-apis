@@ -6,7 +6,7 @@ export const StyledContainer = styled.div`
   height: 160px;
   justify-content: center;
   align-items: center;
-  position: relative; 
+  position: relative;
 `;
 
 export const StyledImageHeader = styled.img`

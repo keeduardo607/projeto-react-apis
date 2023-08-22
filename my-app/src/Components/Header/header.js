@@ -9,6 +9,8 @@ const Header = () => {
   const navigate = useNavigate();
   const { isPokemonInPokedex, currentPokemonName, addToPokedex, removeFromPokedex } = useAppContext();
 
+  console.log("isPokemonInPokedex", isPokemonInPokedex);
+
   const handleAddRemove = () => {
     if (isPokemonInPokedex) {
       removeFromPokedex(currentPokemonName);
