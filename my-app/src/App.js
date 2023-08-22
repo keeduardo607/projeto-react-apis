@@ -11,7 +11,8 @@ import { theme } from './theme';
 function App() {
 
   return (
-    <ChakraProvider theme={theme}>
+    //Estilização Utilizando chakra-ui
+    <ChakraProvider theme={theme}> 
     <Router>
       <AppProvider>
         <Header />

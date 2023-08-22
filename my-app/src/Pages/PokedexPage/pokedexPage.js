@@ -3,9 +3,10 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useAppContext } from "../../AppContext";
 import { Button, Card, CardBody, Image, Stack, CardFooter, ButtonGroup, Heading, Text } from "@chakra-ui/react";
-import { ContainerHome, TituloHome } from "./pokedexPageStyled";
+import { ContainerHome, TituloHomePage } from "./pokedexPageStyled";
 
 const PokedexPage = () => {
+
   const { addToPokedex } = useAppContext();
   const [pokemonList, setPokemonList] = useState([]);
   const [pokemonDetails, setPokemonDetails] = useState({});
@@ -64,11 +65,9 @@ const PokedexPage = () => {
     bug: "#7f8c8d"
   };
 
-
-
   return (
     <>
-      <TituloHome>Todos os Pokémons</TituloHome>
+      <TituloHomePage>Todos os Pokémons</TituloHomePage>
       <ContainerHome>
         {pokemonList.map((pokemon) => {
           const details = pokemonDetails[pokemon.name];

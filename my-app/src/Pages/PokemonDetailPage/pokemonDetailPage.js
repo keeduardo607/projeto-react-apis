@@ -3,7 +3,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useAppContext } from "../../AppContext";
 import { Box, Text, Stack, Image, Center, Card, Grid } from "@chakra-ui/react";
-import { TituloDetalhes } from "./pokemmonDetailPageStyled";
+import { TituloDetalhesPage } from "./pokemmonDetailPageStyled";
 
 const PokemonDetailsPage = () => {
   const { pokemonName } = useParams();
@@ -29,7 +29,7 @@ const PokemonDetailsPage = () => {
 
   return (
     <Box p="4" bg="gray">
-      <TituloDetalhes>Detalhes do Pokémon</TituloDetalhes>
+      <TituloDetalhesPage>Detalhes do Pokémon</TituloDetalhesPage>
       {pokemonData ? (
         <Card
           borderRadius="8px"

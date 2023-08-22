@@ -8,7 +8,7 @@ export const ContainerHome = styled.div`
   background-color: gray;
 `
 
-export const TituloHome = styled.h3`
+export const TituloHomePage = styled.h3`
   display: flex;
   align-items: center;
   padding-left: 20px;

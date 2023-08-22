@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledContainer, StyledImageHeader, LeftButton, RightButton, ButtonVoltar, VerPokemons, ButtonAdicionarRemover } from "./headerStyled";
+import { StyledImageHeader, LeftButton, RightButton, ButtonVoltar, VerPokemons, ButtonAdicionarRemover, StyledContainerHeader } from "./headerStyled";
 import ImageHeader from "../../Images/image 1.png";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAppContext } from "../../AppContext";
@@ -8,6 +8,8 @@ const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { isPokemonInPokedex, currentPokemonName, addToPokedex, removeFromPokedex } = useAppContext();
+
+  console.log("isPokemonInPokedex", isPokemonInPokedex);
 
   const handleAddRemove = () => {
     if (isPokemonInPokedex) {
@@ -18,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <StyledContainer>
+    <StyledContainerHeader>
       <LeftButton>
         {location.pathname !== "/" && (
           <ButtonVoltar onClick={() => navigate(-1)}>Voltar</ButtonVoltar>
@@ -43,7 +45,7 @@ const Header = () => {
     </>
   )}
 </RightButton>
-    </StyledContainer>
+    </StyledContainerHeader>
   );
 };
 
